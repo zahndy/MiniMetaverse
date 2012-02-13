@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- login screen begin -->
+	<LinearLayout
+        android:id="@+id/Login_Screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:visibility="visible" >
+	     <FrameLayout
+	        android:id="@+id/loginform"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.16"
+	        android:visibility="visible" >
+	
+	        <TextView
+	            android:id="@+id/fnametxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="First name" android:layout_gravity="top|left" android:layout_marginTop="5dp"/>
+	
+	        <EditText
+	            android:id="@+id/firstname"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" android:layout_gravity="top|left" android:layout_marginTop="20dp"/>
+	
+	        <TextView
+	            android:id="@+id/lnametxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Last name" android:layout_gravity="top|left" android:layout_marginTop="70dp"/>
+	
+	        <EditText
+	            android:id="@+id/lastname"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" android:layout_gravity="top|left" android:layout_marginTop="85dp"/>
+	
+	        <TextView
+	            android:id="@+id/passwtxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="password" android:layout_gravity="top|left" android:layout_marginTop="135dp"/>
+	
+	        <EditText
+	            android:id="@+id/password"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:inputType="textPassword" android:layout_gravity="top|left" android:layout_marginTop="150dp"/>
+	
+	        <Button
+	            android:id="@+id/loginbutton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom|left"
+	            android:layout_marginTop="200dp"
+	            android:text="Login" />
+	
+	    </FrameLayout>
+    </LinearLayout>
+	<!-- login screen end -->
+	
+	<!-- main screen begin -->
+	<LinearLayout
+	    android:id="@+id/Main_Screen"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" android:visibility="gone">
+	     
+	   <!-- menu begin -->
+		<LinearLayout
+	    android:id="@+id/tabmenu"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" android:padding="0px">
+			 <TableLayout
+		        xmlns:android="http://schemas.android.com/apk/res/android"
+	  			android:stretchColumns="*"
+	  			android:layout_width="fill_parent"
+	  			android:layout_height="wrap_content" android:padding="0px">
+		  			<TableRow android:layout_height="wrap_content"
+		        android:layout_width="fill_parent" android:padding="0px">
+					<Button
+					    android:id="@+id/chatmenubtn"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:text="chat" android:padding="0px" android:layout_marginLeft="-4dip" android:layout_marginRight="-4dip" android:layout_marginBottom="-4dip" android:layout_marginTop="-2dip" 
+					    />
+					<Button
+					    android:id="@+id/IMmenubtn"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:text="IM's" android:padding="0px" android:layout_marginLeft="-4dip" android:layout_marginRight="-4dip" android:layout_marginBottom="-4dip" android:layout_marginTop="-2dip"
+					     />
+					<Button
+					    android:id="@+id/contactsmenubtn"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:text="cont" android:padding="0px" android:layout_marginLeft="-4dip" android:layout_marginRight="-4dip" android:layout_marginBottom="-4dip" android:layout_marginTop="-2dip" 
+					    />
+					<Button
+					    android:id="@+id/systemmenubtn"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:text="sys" android:padding="0px" android:layout_marginLeft="-4dip" android:layout_marginRight="-4dip" android:layout_marginBottom="-4dip" android:layout_marginTop="-2dip"
+					     />
+					</TableRow>
+			</TableLayout>
+	    </LinearLayout>
+	    <!-- menu end -->
+	    
+	    <!-- local chat begin -->
+		<LinearLayout
+		    android:id="@+id/localchat"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:visibility="visible" >
+		     <TextView
+			        android:id="@+id/outputtext"
+			        android:layout_width="fill_parent"
+			        android:layout_height="158dp"
+			        android:layout_weight="1.66"
+			        android:autoLink="web"
+			        android:gravity="bottom"
+			        android:text="@string/hello"
+			        android:visibility="visible" />
+			
+			    <FrameLayout
+			        android:id="@+id/frameLayout1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" >
+			
+			        <EditText
+			            android:id="@+id/inputfield"
+			            android:layout_width="266dp"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left|right" android:layout_marginRight="-4dip" android:layout_marginBottom="-4dip" android:layout_marginTop="-2dip"/>
+			
+			        <Button
+			            android:id="@+id/saybutton"
+			            android:layout_width="90px"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="right"
+			            android:text="Say" android:layout_marginLeft="-4dip" android:layout_marginRight="-2dip" android:layout_marginBottom="-4dip" android:layout_marginTop="-2dip"/>
+			
+			    </FrameLayout>
+		</LinearLayout>
+		<!-- local chat end -->
+		
+		<!-- im's begin -->
+		<LinearLayout
+		    android:id="@+id/ims"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" 
+		    android:visibility="gone">
+			    
+		     <TextView
+			    android:id="@+id/imstextview"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="im's and stuff"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+		</LinearLayout>    
+		<!-- im's end -->
+		
+		<!-- contacts begin -->
+		<LinearLayout
+		    android:id="@+id/contacts"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" 
+		    android:visibility="gone">
+			
+		    <TextView
+			    android:id="@+id/sontactstextview"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="contacts"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+		</LinearLayout> 
+		<!-- contacts end -->
+		
+		<!-- system begin -->
+		<LinearLayout
+		    android:id="@+id/system"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" 
+		    android:visibility="gone">
+
+			<TextView
+			    android:id="@+id/systemtextview"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="System thing"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			<Button
+			    android:id="@+id/logoff"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="log off" />
+			
+			<Button
+			    android:id="@+id/shutdown"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="kill me" android:onClick="murder"/>
+
+		</LinearLayout> 
+		<!-- system end -->
+		
+	</LinearLayout>
+	<!-- main screen end -->
+	
+</LinearLayout>
