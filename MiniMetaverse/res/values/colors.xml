@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_dialogText">#ffbbbbbb</color>
+    <color name="contentText">#ff000000</color>
+    <color name="chat_entryNameSelf">#ffff0000</color>
+    <color name="chat_entryNameFriends">#ff009900</color>
+    <color name="chat_entryNameSomeone">#ff0000ff</color>
+    <color name="chat_entryNameObject">#ff666666</color>
+    <color name="chat_entryTextNormal">#ff000000</color>
+    <color name="chat_entryTextLog">#ff666666</color>
+    <color name="common_listViewBackground">#ffffffff</color>
+    <color name="common_listViewDivider">#ffdddddd</color>
+    <color name="common_headerFooterBackground">#ffe7e7e7</color>
+    <color name="service_notificationLedColorNewIM">#ff00ff00</color>
+    <color name="service_notificationLedColorLostConnection">#ffff0000</color>
+    <color name="common_tabsHighlightColor">#ffffaa00</color>
+    <color name="propertiesDialog_tableBackground">#11000000</color>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:id="@id/chatlayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+      
+        <LinearLayout android:orientation="horizontal"
+             android:id="@id/inputLine" 
+             android:background="#000000" 
+             android:paddingTop="3.0dip" 
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true">
+            <EditText android:scrollbarStyle="insideOverlay"
+                 android:textSize="12.0sp" 
+                 android:id="@id/message" 
+                 android:scrollbars="vertical" 
+                 android:layout_width="0.0dip" 
+                 android:layout_height="fill_parent"
+                  android:maxLines="4" 
+                  android:minLines="1" 
+                  android:autoText="true" 
+                  android:layout_weight="1.0" 
+                  android:imeOptions="flagNoExtractUi|flagNoEnterAction" />
+            <Button android:textSize="12.0sp" android:id="@id/sendButton" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="   say   " />
+        </LinearLayout>
+        
+        <TextView
+			        android:id="@+id/outputtext"
+			        android:layout_width="fill_parent" android:layout_height="wrap_content"
+			        android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="6.0dip" android:paddingBottom="2.0dip"
+			        android:layout_weight="1.66"
+			        android:autoLink="web"
+			        android:gravity="bottom"
+			        android:text="Welcome to MiniMetaverse" 
+			        android:layout_above="@id/inputLine" android:layout_alignParentTop="true"
+			        />
+         </RelativeLayout>
+
+</LinearLayout>

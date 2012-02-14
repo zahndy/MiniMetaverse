@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <FrameLayout
+	        android:id="@+id/loginform"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.16"
+	        android:visibility="visible" >
+	
+	        <TextView
+	            android:id="@+id/fnametxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="First name" android:layout_gravity="top|left" android:layout_marginTop="5dp"/>
+	
+	        <EditText
+	            android:id="@+id/firstname"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" android:layout_gravity="top|left" android:layout_marginTop="24dp"/>
+	
+	        <TextView
+	            android:id="@+id/lnametxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Last name" android:layout_gravity="top|left" android:layout_marginTop="70dp"/>
+	
+	        <EditText
+	            android:id="@+id/lastname"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" android:layout_gravity="top|left" android:layout_marginTop="89dp"/>
+	
+	        <TextView
+	            android:id="@+id/passwtxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="password" android:layout_gravity="top|left" android:layout_marginTop="135dp"/>
+	
+	        <EditText
+	            android:id="@+id/password"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:inputType="textPassword" android:layout_gravity="top|left" android:layout_marginTop="154dp"/>
+	
+
+	        <Button
+	            android:id="@+id/loginbutton"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom|left"
+	            android:layout_marginTop="200dp"
+	            android:text="Login" />
+	
+	    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView
+			    android:id="@+id/systemtextview"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="System thing"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<Button
+			    android:id="@+id/logoff"
+			    android:layout_width="102dp"
+			    android:layout_height="wrap_content"
+			    android:text="log off" />
+			<Button
+			    android:id="@+id/shutdown"
+			    android:layout_width="102dp"
+			    android:layout_height="wrap_content"
+			    android:onClick="murder"
+			    android:text="kill me" />
+
+</LinearLayout>
