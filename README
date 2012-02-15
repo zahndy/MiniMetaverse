@@ -2,4 +2,4 @@ MiniMetaverse is my attempt at creating a free android client for second life.
 Currently the UI is mostly working but there is not really much behind it.
 
 TODO:
-build and use libomv-java.
+-use libomv-java.
