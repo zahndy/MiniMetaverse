@@ -7,13 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TabHost;
-import android.widget.TextView;
 
 public class SystemActivity extends Activity {
+	@SuppressWarnings("unused")
 	private Button kill;
+	@SuppressWarnings("unused")
 	private Button logout;
 	
-    public void onCreate(Bundle savedInstanceState) {
+    @Override
+	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         
@@ -23,7 +25,8 @@ public class SystemActivity extends Activity {
         kill = (Button)findViewById(R.id.shutdown);
         final Button kill = (Button)findViewById(R.id.shutdown);
         kill.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+            @Override
+			public void onClick(View v) {
             	murder();
             }
         });
@@ -31,8 +34,17 @@ public class SystemActivity extends Activity {
         logout = (Button)findViewById(R.id.logoff);
         final Button logout = (Button)findViewById(R.id.logoff);
         logout.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            	ChatActivity.print("System: Logged out");
+            @Override
+			public void onClick(View v) {
+            	if(ZahndyBot.LoggedIn == true)
+            	{
+            		try {
+						ZahndyBot.Logout(null);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+            	}
             	switchTabInActivity(1);
             }
         });

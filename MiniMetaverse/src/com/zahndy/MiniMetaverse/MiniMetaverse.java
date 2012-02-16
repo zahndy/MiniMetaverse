@@ -6,14 +6,12 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
 
-import com.zahndy.MiniMetaverse.*;
-import com.zahndy.MiniMetaverse.R;
-
 public class MiniMetaverse extends TabActivity {
 	
 	TabHost tabHost;
 	
 	
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.main);
@@ -55,5 +53,8 @@ public class MiniMetaverse extends TabActivity {
 	}
 	
 	public TabHost getMyTabHost() { return tabHost; }
+	
+	
+	
 
 }
