@@ -1,5 +1,2 @@
-MiniMetaverse is my attempt at creating a free android client for second life.
-Currently the UI is mostly working but there is not really much behind it.
-
-TODO:
--use libomv-java.
+this is the libomv-java branch where i attempted to implement libomb-java into the project.
+it might work but i was not able to debug as exlipse crashes with a unhandled event loop exception.
